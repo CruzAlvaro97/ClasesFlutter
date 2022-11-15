@@ -17,29 +17,41 @@ class CusttomButtonWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         FloatingActionButton(
-          backgroundColor: const Color.fromARGB(255, 8, 29, 133),
+          backgroundColor: Colors.tealAccent,
+          elevation: 0,
           heroTag: const Text('btn3'),
           tooltip: 'Disminuir',
-          child: const Icon(Icons.remove_circle_outline_rounded),
+          child: const Icon(
+            Icons.remove_circle_outline_rounded,
+            color: Colors.black,
+            size: 30,
+          ),
           onPressed: () => disminuirB(),
         ),
         FloatingActionButton(
-          backgroundColor: const Color.fromARGB(255, 166, 255, 252),
+          backgroundColor: Colors.orangeAccent,
+          elevation: 0,
           heroTag: const Text(
             'btn2',
           ),
           tooltip: 'Reset',
           child: const Icon(
             Icons.restore_sharp,
+            size: 30,
             color: Colors.black,
           ),
           onPressed: () => resetB(),
         ),
         FloatingActionButton(
-          backgroundColor: const Color.fromARGB(255, 97, 77, 45),
+          backgroundColor: Colors.pinkAccent,
+          elevation: 0,
           heroTag: const Text('btn1'),
           tooltip: 'Aumentar',
-          child: const Icon(Icons.add),
+          child: const Icon(
+            Icons.add,
+            color: Colors.black,
+            size: 30,
+          ),
           onPressed: () => aumentarB(),
         ),
       ],

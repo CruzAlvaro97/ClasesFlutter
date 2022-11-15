@@ -44,9 +44,9 @@ class _Home6ScreenState extends State<Home6Screen> {
       body: Center(
         child: SingleChildScrollView(
           child: Container(
-            height: 800,
+            height: 750,
             width: 1000,
-            color: Colors.lightGreenAccent,
+            color: Color.fromARGB(87, 211, 53, 111),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -139,7 +139,7 @@ class _Home6ScreenState extends State<Home6Screen> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: const [
                               Text(
-                                'Cruz',
+                                'Cruz Cáceres',
                                 style: TextStyle(
                                   fontSize: 25,
                                 ),
@@ -152,31 +152,45 @@ class _Home6ScreenState extends State<Home6Screen> {
                   ],
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 20,
                   width: double.infinity,
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Text(
                       'Contador',
-                      style: GoogleFonts.lobster(fontSize: 30),
-                    ),
-                    Text(
-                      '$_counter',
-                      style: GoogleFonts.pacifico(fontSize: 40),
+                      style: GoogleFonts.bitter(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ],
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '$_counter',
+                      style: GoogleFonts.pacifico(fontSize: 50),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 20,
+                  width: double.infinity,
+                ),
+                CusttomButtonWidget(
+                  aumentarB: () => _incrementCounter(),
+                  disminuirB: () => _disminCounter(),
+                  resetB: () => _resetCounter(),
+                )
               ],
             ),
           ),
         ),
-      ),
-      floatingActionButton: CusttomButtonWidget(
-        aumentarB: () => _incrementCounter(),
-        disminuirB: () => _disminCounter(),
-        resetB: () => _resetCounter(),
       ),
     );
   }
