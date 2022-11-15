@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ejemplo_1/Sesion3/page/animacion.dart';
-import 'package:flutter_ejemplo_1/Sesion3/page/images.dart';
-import 'package:flutter_ejemplo_1/Sesion3/page/listtile.dart';
+import 'package:flutter_ejemplo_1/Sesion%203/page/animacion.dart';
+import 'package:flutter_ejemplo_1/Sesion%203/page/images.dart';
+import 'package:flutter_ejemplo_1/Sesion%203/page/listtile.dart';
 
 // StatelessW: Se crea automaticamente el builder
 // La clase debe tener nombre primero en mayúscula
