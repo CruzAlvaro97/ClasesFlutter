@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ejemplo_1/Sesion%207/Screens/screenscroll7tarea.dart';
+// import 'package:flutter_ejemplo_1/Sesion%207/Screens/scroll7.dart';
+import 'Sesion 3/page/inicio3.dart';
 import 'package:flutter_ejemplo_1/Sesion%204/inicio4.dart';
+import 'Sesion 5/inicio5.dart';
 import 'package:flutter_ejemplo_1/Sesion%206/screen/inicio6.dart';
 import 'package:flutter_ejemplo_1/widgetsdemo.dart';
-import 'Sesion 3/page/inicio3.dart';
-import 'Sesion 5/inicio5.dart';
 
 class Menu extends StatelessWidget {
   const Menu({super.key});
@@ -49,6 +51,15 @@ class Menu extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => const Home6Screen()));
+              },
+            ),
+            ButtonWidget(
+              text: 'Sesión 7',
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ScreenScroller7tarea()));
               },
             ),
           ],
